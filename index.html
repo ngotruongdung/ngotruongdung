@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truong Dung Food</title>
+    <link rel="shortcut icon" href="./images/icon-web.png" type="image/x-icon">
+    <!-- link html voi css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- khai bao icon cua font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- header start -->
+    <section class="header-main" id="home">
+        <div class="icon-social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+        </div>
+        <div class="content">
+            <p><i class="fas fa-clock"></i> Giờ làm việc: 7:00 - 23:00 </p>
+        </div>
+        <div class="login">
+            <a href=""><i class="fas fa-user-circle"></i> Đăng nhập</a>
+        </div>
+    </section>
+    <header>
+        <a href="" class="logo"><i class="fas fa-utensils"></i> DungF.</a> <!-- logo cua web -->
+
+        <nav class="navbar">
+            <!-- menu cua web -->
+            <a href="#home" class="active">Trang Chủ</a>
+            <a href="#about">Giới Thiệu</a>
+            <a href="#menu">thực đơn</a>
+            <a href="#order">Đặt bàn</a>
+            <a href="#review">tuyển dụng</a>
+        </nav>
+
+        <div class="icons">
+            <!-- icon cua web ( co menu bar ) -->
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="" class="fas fa-heart"></a>
+            <a href="" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- section search -->
+    <form action="" id="search-form">
+        <input type="search" placeholder="search.." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- slide section start -->
+
+    <main class="home" id="home">
+        <div class="home-slider">
+            <!-- slide cua web -->
+
+            <div class="wrapper">
+                <div class="slide fade">
+                    <div class="image"></div>
+                    <img src="./images/banner/1.png" width="100%" alt="">
+                </div>
+                <div class="slide fade">
+                    <div class="image"></div>
+                    <img src="./images/banner/2.png" width="100%" alt="">
+                </div>
+                <div class="slide fade">
+                    <div class="image"></div>
+                    <img src="./images/banner/3.png" width="100%" alt="">
+                </div>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- slide section end -->
+
+
+    <!-- menu section start -->
+
+    <section class="menu" id="menu">
+        <div class="container">
+
+            <h1 class="heading">thực đơn hôm nay</h1>
+            <div class="line-height"><img src="./images/line-height.png" alt=""></div>
+
+
+            <div class="row">
+                <div class="menu-tabs">
+                    <button type="button" class="menu-tab-item active" data-target="#lunch">món ăn</button>
+                    <button type="button" class="menu-tab-item" data-target="#dinner">hải sản</button>
+                    <button type="button" class="menu-tab-item" data-target="#drink">bánh ngọt</button>
+                    <button type="button" class="menu-tab-item" data-target="#dessert">đồ uống</button>
+                </div>
+            </div>
+
+            <div class="row menu-tab-content active" id="lunch">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/1.jpg" alt="">
+                        <h3>Bò Xông Khói</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/2.jpg" alt="">
+                        <h3>Nuôi Xào</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/3.jpg" alt="">
+                        <h3>Rau Củ Sạch</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/4.jpg" alt="">
+                        <h3>Salar rau củ</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/5.jpg" alt="">
+                        <h3>Mì trộn hải sản</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/6.jpg" alt="">
+                        <h3>cơm gà</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/7.jpg" alt="">
+                        <h3>gà nướng</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/8.jpg" alt="">
+                        <h3>Salar trứng và rau</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-tab-content" id="dinner">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/1.jpg" alt="">
+                        <h3>Bò Xông Khói</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/2.jpg" alt="">
+                        <h3>dinner item</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/3.jpg" alt="">
+                        <h3>dinner item</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/4.jpg" alt="">
+                        <h3>dinner item</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-tab-content" id="drink">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/1.jpg" alt="">
+                        <h3>Bò Xông Khói</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/2.jpg" alt="">
+                        <h3>drink item</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu-tab-content" id="dessert">
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/1.jpg" alt="">
+                        <h3>Bò Xông Khói</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-title">
+                        <img src="./images/menu/2.jpg" alt="">
+                        <h3>dessert item</h3>
+                    </div>
+                    <div class="menu-item-price">
+                        <p>90K</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- menu section end -->
+
+
+
+    <!-- about section start -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">về chúng tôi</h1>
+        <div class="line-height"><img src="./images/line-height.png" alt=""></div>
+
+        <div class="row">
+            <div class="image">
+                <img src="./images/about-img.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>TD.Food restaurant</h3>
+                <p>TD.Food được thành lập từ 7/2020 Với mong muốn đem lại cho quý thực khách cơ hội thưởng thức hương vị
+                    đặc biệt từ những phong cách chế biến chuyên nghiệp và độc đáo, mang đến nhiều bất ngờ cho vị giác,
+                    cùng với sự kết hợp giữa ẩm thực Á - Âu, TDFood đã chọn lựa và chắt lọc những tinh hoa ẩm thực, xin
+                    hân hạnh được chinh phục những khách hàng có khẩu vị khó tính nhất.</p>
+                <p>Cùng đội ngũ đầu bếp chuyên nghiệp trong và ngoài nước, quý khách sẽ hoàn toàn hài lòng với cung cách
+                    thật sự ngon miệng trong từng món ăn bởi chất lượng, sự đa dạng, phong phú và hấp dẫn của thực đơn.
+                </p>
+                <div class="icons-container">
+
+                    <div class="icons">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span>đặt bàn nhanh chóng</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>dễ dàng thanh toán</span>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 hỗ trợ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- about section end -->
+
+    <!-- popular section start  -->
+
+    <section class="popular" id="popular">
+
+        <h1 class="heading">món ăn nổi bật</h1>
+        <div class="line-height"><img src="./images/line-height.png" alt=""></div>
+
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="price">89.000đ</span>
+                <img src="./images/p-1.jpg" alt="">
+                <h3>burger thịt nướng</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="" class="btn"><i class="fas fa-shopping-cart"></i> mua ngay </i></a>
+            </div>
+            <div class="box">
+                <span class="price">89.000đ</span>
+                <img src="./images/p-2.jpg" alt="">
+                <h3>bánh kem chuối</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="" class="btn"><i class="fas fa-shopping-cart"></i> mua ngay </i></a>
+            </div>
+            <div class="box">
+                <span class="price">89.000đ</span>
+                <img src="./images/p-3.jpg" alt="">
+                <h3>ngũ cốc sấy</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="" class="btn"><i class="fas fa-shopping-cart"></i> mua ngay </i></a>
+            </div>
+            <div class="box">
+                <span class="price">89.000đ</span>
+                <img src="./images/p-4.jpg" alt="">
+                <h3>bánh ngọt</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="" class="btn"><i class="fas fa-shopping-cart"></i> mua ngay </i></a>
+            </div>
+            <div class="box">
+                <span class="price">89.000đ</span>
+                <img src="./images/p-5.jpg" alt="">
+                <h3>nước ép trái cây</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="" class="btn"><i class="fas fa-shopping-cart"></i> mua ngay </i></a>
+            </div>
+            <div class="box">
+                <span class="price">89.000đ</span>
+                <img src="./images/p-6.jpg" alt="">
+                <h3>kem cây hoa quả</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="" class="btn"><i class="fas fa-shopping-cart"></i> mua ngay </i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- popular section end  -->
+
+    <!-- mennu-time section start -->
+
+    <h1 class="heading">lịch nhà hàng</h1>
+    <div class="line-height"><img src="./images/line-height.png" alt=""></div>
+
+
+    <section class="menu-times" id="menu">
+
+        <div class="row">
+
+            <div class="image">
+                <img src="./images/times-img.png" alt="" id="menu-img">
+            </div>
+
+            <div class="content">
+                <div class="info">
+                    <h3><span>01.</span> buffer hải sản</h3>
+                    <p>vào thứ 2 và thứ 5. Bắt đầu từ 15:00 - 22:30</p>
+                </div>
+                <div class="info">
+                    <h3><span>02.</span> bữa tiệc thịt bò</h3>
+                    <p>Vào thứ 7 và chủ nhật. Bắt đầu từ 19:00 - 23:00</p>
+                </div>
+                <div class="info">
+                    <h3><span>03.</span> tiệc trà chiều</h3>
+                    <p>tất cả các ngày trong từ từ 14:00 - 17:00</p>
+                </div>
+                <div class="info">
+                    <h3><span>04.</span>sự kiện lớn</h3>
+                    <p>vào các dịch lễ lớn như: giáng sinh, tết trung thu,..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- mennu-time section end -->
+
+    <!-- order section start -->
+    <section class="order" id="order">
+
+        <h1 class="heading">đặt bàn</h1>
+        <div class="line-height"><img src="./images/line-height.png" alt=""></div>
+
+        <form action="">
+            <div class="inputBox">
+                <div class="input">
+                    <span>Họ và tên</span>
+                    <input type="text" placeholder="Nhập họ và tên">
+                </div>
+                <div class="input">
+                    <span>Số Điện Thoại</span>
+                    <input type="number" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="input">
+                    <span>Email</span>
+                    <input type="email" placeholder="Nhập email">
+                </div>
+                <div class="input">
+                    <span>Giờ đặt bàn</span>
+                    <input type="datetime-local" placeholder="Nhập giờ">
+                </div>
+                <div class="input">
+                    <span>Số lượng người</span>
+                    <input type="number" placeholder="Nhập số lượng người">
+                </div>
+                <div class="input">
+                    <span>món ăn đặt trước</span>
+                    <input type="text" placeholder="Nhập món ăn đặt trước">
+                </div>
+
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>Bình luận</span>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input review">
+                    <span>Đánh giá</span>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <a href="" class="btn">đặt bàn</a>
+        </form>
+    </section>
+    <!-- order section end -->
+
+    <!-- footer section start -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Địa chỉ</h3>
+                <a href=""><i class="fas fa-home"></i> Quận 7, HCM</a>
+                <a href=""><i class="fas fa-home"></i> Quận 5, HCM</a>
+                <a href=""><i class="fas fa-home"></i> Quận 1, HCM</a>
+            </div>
+            <div class="box">
+                <h3>liên hệ</h3>
+                <a href=""><i class="fas fa-phone-alt"></i> 08622.08620</a>
+                <a href=""><i class="fas fa-envelope-open"></i> tdfood@gmail.com</a>
+                <a href=""><i class="fas fa-home"></i> Quận 7, HCM</a>
+            </div>
+            <div class="box-2">
+                <h3>Nhận mã khuyến mãi</h3>
+                <div class="search-input">
+                    <input type="text" placeholder="Nhận mã khuyến mãi.."/>
+                    <button>Gửi</button>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-tiktok"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="credit">
+            <p>© 2021. T.DungFood All Rights
+                <a href="https://www.facebook.com/Dung.Cong.Chua.Official/">Trường Dũng</a>
+            </p>
+        </div>
+    </section>
+    <!-- footer section end -->
+
+    <!-- gif loader -->
+    <div class="loader-container">
+    <img src="./images/loader.gif" alt="">
+</div>
+
+    <!-- button scroll top -->
+    <a href="#home" class="fas fa-angle-up" id="scoll-top"></a>
+
+
+
+    <!-- link html voi javascript -->
+    <script src="/javascript/js.js"></script>
+
+</body>
+
+</html>
